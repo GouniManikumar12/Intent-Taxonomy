@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://agenticintentprotocol.com/schemas/agentic-intent-taxonomy.schema.json",
+  "$comment": "IAB content mappings in this schema should reference the IAB Content Taxonomy 3.1 TSV: https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv",
   "title": "Agentic Intent Taxonomy Decision Envelope",
   "description": "Draft schema for the Agentic Intent Taxonomy with explicit separation between model prediction and system decision.",
   "type": "object",
@@ -68,6 +69,7 @@
       }
     },
     "iabContent": {
+      "description": "IAB-aligned content classification. Canonical external reference: https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv",
       "oneOf": [
         {
           "type": "object",

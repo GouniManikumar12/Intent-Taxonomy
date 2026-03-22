@@ -47,6 +47,10 @@ Each dimension represents a distinct signal:
 
 ### 3.1 Content Classification (IAB-Aligned)
 
+Canonical external reference:
+
+- IAB Content Taxonomy 3.1 TSV: <https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv>
+
 Compact transport form:
 
 ```json
@@ -92,6 +96,7 @@ Rules:
 - must map to IAB taxonomy or an internal mapped equivalent
 - `tier1` is required for monetization-aware classification
 - `tier2` and `tier3` are strongly recommended for advertiser matching and reporting
+- the canonical external reference for IAB mappings is the IAB Content Taxonomy 3.1 TSV: <https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv>
 - if an exact IAB node is unavailable, systems should use the closest valid node and record `mapping_mode`
 - internal extensions should never replace the IAB path; they should sit alongside it
 
