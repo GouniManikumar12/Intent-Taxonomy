@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://admesh.com/schemas/agentic-intent-taxonomy.schema.json",
-  "title": "AdMesh Agentic Intent Taxonomy Decision Envelope",
-  "description": "Draft schema for the AdMesh Agentic Intent Taxonomy with explicit separation between model prediction and system decision.",
+  "$id": "https://agenticintentprotocol.com/schemas/agentic-intent-taxonomy.schema.json",
+  "title": "Agentic Intent Taxonomy Decision Envelope",
+  "description": "Draft schema for the Agentic Intent Taxonomy with explicit separation between model prediction and system decision.",
   "type": "object",
   "additionalProperties": false,
   "required": ["model_output", "system_decision"],

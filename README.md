@@ -1,4 +1,4 @@
-# AdMesh Agentic Intent Taxonomy v1.0
+# Agentic Intent Taxonomy v1.0
 
 Status: Draft  
 Version: `1.0.0`  
@@ -543,7 +543,7 @@ Query: `Tell me more`
 
 ## 6. AIP Integration
 
-### Platform -> AdMesh
+### Platform -> Operator
 
 Sends:
 
@@ -551,7 +551,7 @@ Sends:
 - minimal context signals
 - optional platform metadata
 
-### AdMesh Model Layer
+### Operator Model Layer
 
 Computes:
 
@@ -560,7 +560,7 @@ Computes:
 - confidence and commercial scoring
 - fallback recommendation when needed
 
-### AdMesh Decision Layer
+### Operator Decision Layer
 
 Computes:
 
@@ -569,7 +569,7 @@ Computes:
 - opportunity designation
 - trajectory updates
 
-### AdMesh -> Brand Agents
+### Operator -> Brand Agents
 
 Sends:
 
@@ -645,7 +645,7 @@ Evaluation principle:
 
 ## 11. External Positioning
 
-> "AdMesh extends IAB Content Taxonomy with an Agentic Intent Layer that captures real-time decision signals, monetization eligibility, and opportunity context inside AI conversations."
+> "This specification extends IAB Content Taxonomy with an Agentic Intent Layer that captures real-time decision signals, monetization eligibility, and opportunity context inside AI conversations."
 
 ## 12. Immediate Next Steps
 
