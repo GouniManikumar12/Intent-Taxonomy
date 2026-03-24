@@ -65,9 +65,9 @@ Compact transport form:
 {
   "iab_content": {
     "taxonomy_version": "3.1",
-    "tier1": "Business",
-    "tier2": "Software",
-    "tier3": "CRM"
+    "tier1": "Business and Finance",
+    "tier2": "Business",
+    "tier3": "Business I.T."
   }
 }
 ```
@@ -82,16 +82,16 @@ When a system needs stable matching, auditing, or downstream interoperability, t
     "taxonomy": "IAB Content Taxonomy",
     "taxonomy_version": "3.1",
     "tier1": {
-      "id": "business",
-      "label": "Business"
+      "id": "52",
+      "label": "Business and Finance"
     },
     "tier2": {
-      "id": "software",
-      "label": "Software"
+      "id": "53",
+      "label": "Business"
     },
     "tier3": {
-      "id": "crm",
-      "label": "CRM"
+      "id": "72",
+      "label": "Business I.T."
     },
     "mapping_mode": "nearest_equivalent",
     "mapping_confidence": 0.93
@@ -330,9 +330,9 @@ The canonical audited object should separate model prediction from system decisi
     "classification": {
       "iab_content": {
         "taxonomy_version": "3.1",
-        "tier1": "Business",
-        "tier2": "Software",
-        "tier3": "CRM"
+        "tier1": "Business and Finance",
+        "tier2": "Business",
+        "tier3": "Business I.T."
       },
       "intent": {
         "type": "commercial",
