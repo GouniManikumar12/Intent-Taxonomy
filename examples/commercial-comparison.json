@@ -1,0 +1,63 @@
+{
+  "model_output": {
+    "classification": {
+      "iab_content": {
+        "taxonomy": "IAB Content Taxonomy",
+        "taxonomy_version": "3.1",
+        "tier1": {
+          "id": "business",
+          "label": "Business"
+        },
+        "tier2": {
+          "id": "software",
+          "label": "Software"
+        },
+        "tier3": {
+          "id": "crm",
+          "label": "CRM"
+        },
+        "mapping_mode": "nearest_equivalent",
+        "mapping_confidence": 0.93
+      },
+      "intent": {
+        "type": "commercial",
+        "subtype": "comparison",
+        "decision_phase": "decision",
+        "confidence": 0.87,
+        "commercial_score": 0.92,
+        "summary": "User is evaluating CRM tools for a small team."
+      },
+      "context": {
+        "entities": [
+          "HubSpot",
+          "Zoho"
+        ],
+        "constraints": {
+          "company_size": "small_team"
+        }
+      }
+    }
+  },
+  "system_decision": {
+    "policy": {
+      "monetization_eligibility": "allowed",
+      "eligibility_reason": "commercial_score_above_threshold",
+      "decision_basis": "score_threshold",
+      "applied_thresholds": {
+        "commercial_score_min": 0.7,
+        "confidence_min": 0.6
+      },
+      "sensitivity": "low",
+      "regulated_vertical": false
+    },
+    "opportunity": {
+      "type": "comparison_slot",
+      "strength": "high"
+    },
+    "intent_trajectory": [
+      "research",
+      "consideration",
+      "decision"
+    ]
+  }
+}

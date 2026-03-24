@@ -1,8 +1,8 @@
-# Agentic Intent Taxonomy v1.0
+# Agentic Intent Taxonomy
 
-Status: Draft  
-Version: `1.0.0`  
-Last updated: `2026-03`
+Status: Public Draft  
+Version: `0.1.0`  
+Last updated: `2026-03-23`
 
 ## 1. Overview
 
@@ -14,6 +14,14 @@ It is designed to:
 - enable monetization decisioning in conversational environments
 - provide a consistent interface for AI platforms, exchanges, and advertisers
 - support implementation across policy, auction, analytics, annotation, and model training systems
+
+This repository contains:
+
+- the normative overview in this README
+- the JSON Schema in `agentic-intent-taxonomy.schema.json`
+- canonical example envelopes in `examples/`
+
+This public draft is ready for review, implementation feedback, and schema-level collaboration. Companion workstreams such as annotation guidelines and seed datasets are important, but they are not blockers for discussing or improving the specification itself.
 
 ## 2. Design Principles
 
@@ -56,7 +64,7 @@ Compact transport form:
 ```json
 {
   "iab_content": {
-    "taxonomy_version": "3.0",
+    "taxonomy_version": "3.1",
     "tier1": "Business",
     "tier2": "Software",
     "tier3": "CRM"
@@ -72,7 +80,7 @@ When a system needs stable matching, auditing, or downstream interoperability, t
 {
   "iab_content": {
     "taxonomy": "IAB Content Taxonomy",
-    "taxonomy_version": "3.0",
+    "taxonomy_version": "3.1",
     "tier1": {
       "id": "business",
       "label": "Business"
@@ -321,7 +329,7 @@ The canonical audited object should separate model prediction from system decisi
   "model_output": {
     "classification": {
       "iab_content": {
-        "taxonomy_version": "3.0",
+        "taxonomy_version": "3.1",
         "tier1": "Business",
         "tier2": "Software",
         "tier3": "CRM"
@@ -639,7 +647,11 @@ Evaluation principle:
 
 - policy safety errors are more severe than missed monetization opportunities
 
-## 10. What Makes This Strong
+## 10. Contributing
+
+Contribution expectations are documented in `CONTRIBUTING.md`. Community behavior expectations are documented in `CODE_OF_CONDUCT.md`.
+
+## 11. What Makes This Strong
 
 - aligned with IAB for industry credibility
 - structured for ML and annotation workflows
@@ -648,31 +660,20 @@ Evaluation principle:
 - structured for API and schema implementation
 - structured for auditability between prediction and decision
 
-## 11. External Positioning
+## 12. External Positioning
 
 > "This specification extends IAB Content Taxonomy with an Agentic Intent Layer that captures real-time decision signals, monetization eligibility, and opportunity context inside AI conversations."
 
-## 12. Immediate Next Steps
+## 13. Collaboration Priorities
 
-### 12.1 Annotation Handbook
+The highest-leverage follow-on work for contributors is:
 
-Needed for:
+- an annotation handbook with edge-case resolution rules
+- additional canonical examples across more verticals and safety cases
+- seed datasets for model training and policy calibration
+- implementation feedback from platforms, operators, and advertisers
 
-- exact labeling rules
-- edge case resolution
-- reviewer consistency
-- restricted scenario handling
-
-### 12.2 Seed Dataset (100-500 samples)
-
-Needed for:
-
-- v0.1 model training
-- schema validation against real prompts
-- policy calibration
-- commercial score benchmarking
-
-## 13. Notes for IAB Alignment
+## 14. Notes for IAB Alignment
 
 If this is taken into an IAB-facing process, the likely standardization path is:
 

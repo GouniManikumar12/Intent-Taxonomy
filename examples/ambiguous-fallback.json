@@ -1,0 +1,28 @@
+{
+  "model_output": {
+    "classification": {
+      "intent": {
+        "type": "ambiguous",
+        "decision_phase": "research",
+        "confidence": 0.34
+      }
+    },
+    "fallback": {
+      "applied": true,
+      "fallback_intent_type": "exploratory",
+      "fallback_monetization_eligibility": "not_allowed",
+      "reason": "insufficient_context"
+    }
+  },
+  "system_decision": {
+    "policy": {
+      "monetization_eligibility": "not_allowed",
+      "eligibility_reason": "fallback_low_confidence",
+      "decision_basis": "fallback_low_confidence"
+    },
+    "opportunity": {
+      "type": "none",
+      "strength": "low"
+    }
+  }
+}
